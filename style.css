@@ -47,7 +47,7 @@ h1.combinator{
     color:red;
     font-size: 18px;
 }
-#mh{
+#mh, #mh_class_id{
     width: 500px;
 }
 

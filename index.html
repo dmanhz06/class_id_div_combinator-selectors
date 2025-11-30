@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+    <link rel="manifest" href="./ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <title>class id selector</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
+</head>
+<body>
+    <h1>Class ID selector css</h1>
+    <hr>
+    <ol>
+        <li id="id_selector">ID selector: </li>
+        
+        <ul>
+            <li><span>Chọn phần tử riêng muốn thay đổi css mà nó bị trùng thẻ với các phần tử khác<br>
+                => Sử dụng ID selector (mỗi phần tử chỉ có 1 ID duy nhất ko được trùng nhau)
+            </span></li>
+            <li id="id_cuphap">Cú pháp: <code class="language-html">#id_name{ thuộc tính ...}</code></li>
+            <li id="note_id">NOTE: mỗi phần tử chỉ có 1 ID duy nhất => nếu muốn áp dụng cho nhiều phần tử riêng thì phải dùng class</li>
+        </ul>
+        <hr>
+        <li class="class_selector">Class selector:</li>
+        <ul>
+            <li><span>Chọn nhiều phần tử riêng muốn thay đổi css mà nó bị trùng thẻ với các phần tử khác<br>
+                => Sử dụng Class selector (mỗi phần tử có thể có nhiều class khác nhau)
+            </span></li>
+            <!-- class có thể trùng nhau còn id thì ko được trùng với đối tượng khác -->
+            <li class="class_selector">Cú pháp: <code class="language-html">.class_name{ thuộc tính ...}</code></li>
+            <li class="class_note">NOTE: mỗi phần tử có thể có nhiều class khác nhau</li>
+        </ul>
+    </ol>
+    <hr>
+    <h2 class="suyra">*NOTE: cách code nhanh với class:</h2>
+    <p>ví dụ muốn gõ <code class="language-html">&lt;h1 class=&quot;helo&quot;&gt;hello&lt;/h1&gt;</code></p>
+    <p>thì chỉ cần gõ : h1.helo + enter là ra được đoạn code trên
+    </p>
+
+    <hr>
+    <h1 class="combinator">Combinator selector</h1>
+    <ol>
+        <li class="tieude">Code áp dụng cho đối tượng riêng có chung thẻ (h1, h2, p...)</li>
+        <p class="vd">Ví dụ:</p>
+        <p>
+        <pre>
+        <code class="language-html">
+&lt;h1&gt;hello mọi người&lt;/h1&gt;
+&lt;h1 class=&quot;kon&quot;&gt;konichiwa mina &lt;/h1&gt;
+        </code>
+        </pre>
+        </p>
+        <p class="suyra">=> để phân biệt thì cho thêm id vào h1 rồi dùng cú pháp:</p>
+        <p>
+            <code class="language-html">
+            h1.kon{ thuộc tính ...}
+            </code>
+        </p>
+        <p class="suyra">=> Áp dụng cho h1 có class="kon"</p>
+        <hr>
+        <li class="tieude">Code áp dụng cho toàn đối tượng trong css:</li>
+        <p><code class="language-html">*{ thuộc tính ....}</code></p>
+        <p class="vd">Ví dụ:</p>
+        <p>
+            *{
+            <br> color: red;
+            <br>font-size: 20px;
+            <br>}</p>
+        </p>
+        
+        <p class="suyra">=> Áp ụng cho toàn bộ đối tượng thành màu đỏ và cỡ chữ 20px</p>
+        <hr>
+        <li class="tieude">Code áp dụng cho nhiều thẻ cùng lúc:</li>
+        <p class="vd">Ví dụ:</p>
+        <p>muốn thẻ h1,h2,h3,p,ul đều màu đỏ</p>
+        <p class="suyra">=> ta dùng dấu phẩy đối vs các thẻ tag</p>
+        <p>
+            <code class="language-html">
+            h1, h2, h3, p, ul{
+            <br> color: red;
+            <br>}
+            </code>
+        </p>
+        <p>Ngoài ra còn có thể dùng dấu phẩy để liệt kê đối vs các class và id</p>
+        <p class="vd">Ví dụ:</p>
+        <p>muốn h1, class="class2", id="id1" đều có nền xanh</p>
+        <p class="suyra">=> ta dùng dấu phẩy đối vs các class</p>
+        <p>
+            <pre>
+                <code class="language-html">    
+h1,
+.class2,
+#id1{
+    background-color: blue;
+}
+                </code>
+            </pre>
+        </p>
+        <p class="tieude tieude2">*NOTE: Ngoài ra ta còn có thể sử dụng 2 class cùng lúc tượng trưng như dùng and</p>
+        <p class="vd">Ví dụ:</p>
+        <p class="tieude">- muốn thẻ p có cả class="class1" và class="class2" thì mới áp dụng css</p>
+        <p class="suyra">=> ta dùng dấu chấm nối tiếp 2 class</p>
+        <p>
+            <code class="language-html">
+            p.class1.class2{
+            <br> color: red;
+            <br>}
+            </code>
+        </p>
+        <p class="suyra">=> Áp dụng cho thẻ p có cả class="class1" và class="class2"</p>
+
+    </ol>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    
+</body>
+</html>

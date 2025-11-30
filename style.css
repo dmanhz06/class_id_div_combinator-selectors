@@ -1,0 +1,50 @@
+h1{
+    color : rgb(47, 186, 255);
+    text-align: center;
+}
+h1.combinator{
+    color:red;
+    text-align: center;
+}
+#id_selector{
+    color:red;
+    font-size: larger;
+    font-style: italic;
+}
+#note_id{
+    color:green;
+    font-size: larger;
+    font-style: italic;
+}
+#id_cuphap{
+    color:purple;
+    font-size: larger;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.class_selector{
+    color:blue;
+    font-size: larger;
+}
+.class_note, .vd{
+    color:orange;
+    font-size: larger;
+    font-style: italic;
+}
+.tieude{
+
+    color:rgb(80, 185, 255);
+    font-size: 20px;
+}
+.tieude.tieude2{
+
+    color:red;
+    font-size: 20px;
+}
+.suyra{
+    color:red;
+    font-size: 18px;
+}
+

@@ -58,3 +58,7 @@ div>p{
     color: red;
     font-size: larger;
 }
+block p{
+    color: blue;
+    font-size: larger;
+}

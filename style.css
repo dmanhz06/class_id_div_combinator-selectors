@@ -43,8 +43,18 @@ h1.combinator{
     color:red;
     font-size: 20px;
 }
-.suyra{
+.suyra, #bl_p{
     color:red;
     font-size: 18px;
 }
+#mh{
+    width: 700px;
+}
 
+.div_class li{
+    color: purple;
+}
+div>p{
+    color: red;
+    font-size: larger;
+}

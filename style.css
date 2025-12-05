@@ -47,8 +47,8 @@ h1.combinator{
     color:red;
     font-size: 18px;
 }
-#mh, #mh_class_id{
-    width: 500px;
+#mh, #mh_class_id, #mh_div_cong_p, #mh_div_nga_chinh, #mh_div_nga1, #mh_div_nga2{   
+    width: 510px;
 }
 
 .div_class li{
@@ -61,4 +61,14 @@ div>p{
 block p{
     color: blue;
     font-size: larger;
+}
+/*------------------------------------bài 30: div + p------------------------------------*/
+.demo + p{
+    color: green;
+}
+.demo.demo2 + p, .demo_nga+p{
+    color: blue;
+}
+h2{
+    color: orange;
 }
